@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Catálogo | Pastelería Dulce</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-pink-50">
+
+  <!-- Header -->
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-pink-500">Dulce Delicia</h1>
+      <ul class="flex space-x-6 text-gray-700 font-medium">
+        <li><a href="index.html" class="hover:text-pink-500">Inicio</a></li>
+        <li><a href="index.html" class="hover:text-pink-500">Servicios personalizados</a></li>
+        <li><a href="index.html" class="hover:text-pink-500">Sobre nosotros</a></li>
+
+        <li class="relative group">
+            <a href="#" class="hover:text-pink-500">Catálogo de productos</a>
+            <!-- Menú desplegable -->
+            <ul class="absolute left-0 top-full mt-0 w-40 bg-white border rounded shadow-lg opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-200 z-50">
+              <li><a href="pasteles.html" class="block px-4 py-2 hover:bg-pink-100">Pasteles</a></li>
+              <li><a href="cupcakes.html" class="block px-4 py-2 hover:bg-pink-100">Cupcakes</a></li>
+              <li><a href="galletas.html" class="block px-4 py-2 hover:bg-pink-100">Galletas</a></li>
+              <li><a href="galletas.html" class="block px-4 py-2 hover:bg-pink-100">Donas</a></li>
+            </ul>
+          </li>
+
+       
+      <a href="index.html" class="text-pink-600 hover:underline">← Volver al Inicio</a>
+    </div>
+  </header>
+
+  <!-- Catálogo -->
+  <section class="py-16">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold text-pink-600 mb-10">Nuestros Productos</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Producto 1 -->
+        <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition">
+          <img src="https://source.unsplash.com/300x200/?cake" alt="Pastel 1" class="w-full h-48 object-cover rounded mb-4">
+          <h3 class="text-xl font-semibold text-pink-700">Pastel de Chocolate</h3>
+          <p class="text-gray-700">Delicioso pastel con cobertura de chocolate oscuro.</p>
+        </div>
+
+        <!-- Producto 2 -->
+        <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition">
+          <img src="https://source.unsplash.com/300x200/?strawberry-cake" alt="Pastel 2" class="w-full h-48 object-cover rounded mb-4">
+          <h3 class="text-xl font-semibold text-pink-700">Pastel de Fresa</h3>
+          <p class="text-gray-700">Bizcocho suave con fresas naturales.</p>
+        </div>
+
+        <!-- Producto 3 -->
+        <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition">
+          <img src="https://source.unsplash.com/300x200/?cupcake" alt="Cupcake" class="w-full h-48 object-cover rounded mb-4">
+          <h3 class="text-xl font-semibold text-pink-700">Cupcakes Variados</h3>
+          <p class="text-gray-700">Mini delicias en sabores surtidos.</p>
+        </div>
+
+        <!-- Agrega más productos si lo deseas -->
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-pink-200 py-6 text-center text-pink-800">
+    © 2025 Pastelería Dulce | Todos los derechos reservados.
+  </footer>
+
+  <script>
+    const dropdownBtn = document.getElementById('dropdownBtn');
+    const dropdownMenu = document.getElementById('dropdownMenu');
+
+    dropdownBtn.addEventListener('click', () => {
+      dropdownMenu.classList.toggle('hidden');
+    });
+
+    // Opcional: cerrar al hacer clic fuera
+    document.addEventListener('click', (e) => {
+      if (!dropdownBtn.contains(e.target) && !dropdownMenu.contains(e.target)) {
+        dropdownMenu.classList.add('hidden');
+      }
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Los postres de Marry</title>
+	<link rel="icon" href="Cupcake.png">
+	<link rel="stylesheet" href="Style.css">
+</head>
+<body>
+	<header>
+		<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+	    <h1>Los postres de Marry</h1>
+	    <nav>
+	    	<ul class="principal">
+			  <li><a href="index.html">Menu principal</a></li>
+			  <li><a href="Postres.html">Postres</a></li>
+	    	  <li><a href="Contactos.html">Contactanos</a></li>
+	        </ul>
+	    </nav>
+	</header>
+
+    <nav class="formulario">
+        <h1 class="formulario_aviso">Si deseas realizar alguna solicitus sobre nuestra linea de pasteles para eventos, por favor llena el siguiente formulario</h1>
+    </nav>
+
+</form>
+<table>
+	<caption>Horarios de atencion</caption>
+	<thead>
+		<tr>
+		  <td>Dia</td>
+		  <td>Horario</td>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+		  <td>Lunes</td>
+		  <td>10am~9pm</td>
+		</tr>
+		<tr>
+		  <td>Martes</td>
+		  <td>10am~9pm</td>
+		</tr>
+		<tr>
+		  <td>Miercoles</td>
+		  <td>10am~9pm</td>
+		</tr>
+		<tr>
+			<td>Jueves</td>
+			<td>Cerrado</td>
+		</tr>
+		<tr>
+			<td>Viernes</td>
+			<td>10am~9pm</td>
+		</tr>
+		<tr>
+			<td>Sabado</td>
+			<td>10am~9pm</td>
+		</tr>
+		<tr>
+			<td>Domingo</td>
+			<td>Cerrado</td>
+		</tr>
+	</tbody>
+</table>
+
+    <form>
+        <label for="nombres">Nombres</label>
+        <input type="text" id="nombreapellido" class="input-padron" required>
+
+        <label for="apellido">Apellidos</label>
+        <input type="text" id="nombreapellido" class="input-padron" required placeholder="">
+
+
+        <label for="correoelectronico">Correo Electronico</label>
+        <input type="email" id="correoelectronico" class="input-padron" required placeholder="email@dominio.com">
+
+
+        <label for="telefono">Telefono</label>
+        <input type="tel" id="telefono" class="input-padron" required placeholder="(xx) xxxx xxxx">
+
+        <label for="comentario-titulo">Escriba algun comentario</label>
+	    <textarea title ="comentario"rows="5" cols="50"></textarea>
+
+		<fieldset class="contacto_cliente">
+			<legend>¿Como quieres que te contactemos?</legend>
+			<label>
+				<input type="radio" name="contacto" value="WhatsApp">WhatsApp
+			</label>
+			<label>
+				<input type="radio" name="contacto" value="Email">Email
+			</label>
+			<label>
+				<input type="radio" name="contacto" value="Telefono">Telefono
+			</label>
+		</fieldset>
+		<fieldset class="horario_cliente">
+			<legend>¿En que horario te podemos contactar?</legend>
+			<label>
+				<input type="radio" name="Horario" value="Mañana">Mañana.
+			</label>
+			<label>
+				<input type="radio" name="Horario" value="Tarde">Tarde.
+			</label>
+			<label>
+				<input type="radio" name="Horario" value="Noche">Noche(atencion hasta las 9pm).
+			</label>
+		</fieldset>
+
+		<label for="lang" class="pasteles">Selecciona el pastel que sea de tu solicitud</label>
+      <select class="pasteles" id="lang">
+        <option value="Pastel_fiesta">Pasteles para fiestas de cumpleaños</option>
+        <option value="Pastel_15">Pastel para 15 años</option>
+        <option value="Pastel_boda">Pastel de bodas</option>
+        <option value="Pastel_bautizo">Pastel para bautizos</option>
+		<option value="Pastel_infantil">Pastel para fiestas infantiles</option>
+		<option value="Pastel_infantil">Pastel para primera comunion</option>
+		<option value="Pastel_otros">Pastel para otros eventos(especificar en la caja de comentario)</option>
+      </select>
+
+		
+    </form>
+	<input type="button" value="Enviar" class="boton_enviar">
+
+	<footer>
+
+		<ul class="Redes_sociales">
+
+			<li>
+				<h1>Los postres de Marry</h1>
+		       <img title="Facebook" src="facebook.png">
+		       <p>@Los postres de Marry</p>
+			</li>
+
+			<li>
+				<img title= "Instagram" src="instagram.png">
+		        <p>PostresMarry_Colombia</p>	
+			</li>
+
+			<li>
+				<img title = "Whatsapp" src="Whatsapp.png">
+		        <p>2008734569 chats y llamadas</p>	
+			</li>
+			<li>
+				<img title = "Gmail" src="Gmail.png">
+		        <p>PostresMarry@gmail.com</p>	
+			</li>
+		</ul>
+		<p>Ubicanos en la carrera 40 # 20-45</p>
+		<p>¡Te esperamos!</p>
+		<p>&copy 2015 los postres de Marry</p>
+
+	</footer>
+
+</body>
+</html>
